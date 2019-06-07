@@ -8,7 +8,23 @@ public class TesteString {
 		nome += " Almeida";
 		nome = nome + " Alencar";
 		
-		System.out.println(nome);
+		System.out.println("Nome concatenação: " + nome);
+		
+		
+		//StringBuilder, mais indicado para concatenação de strings
+		
+		StringBuilder builder;
+		builder = new StringBuilder("Linguagem Java");
+		builder.append(" 1.4");
+		System.out.println(builder);
+		
+		builder = new StringBuilder("Linguagem java");
+		builder.delete(0,10);
+		System.out.println(builder);
+		
+		builder = new StringBuilder("Linguagem java");
+		builder.insert(10,"de programação");
+		System.out.println(builder);
 	}
 
 }
